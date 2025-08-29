@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  min-height: 100vh; /* always at least full viewport height */
+  margin: 0;
+}
+body{
+    background: linear-gradient(to bottom, white, lightblue);
+    background-attachment: fixed;
+}
+.wixNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    box-shadow: 0 2px 4px #00000017;
+}
+.navTitle{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.title span {
+    color: red;
+    font-size: 40px;
+}
+.navigator .navLinks li a {
+    text-decoration: none;
+    color: black;
+}
+.navLinks li a:hover {
+    color: crimson;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.navLinks li {
+    list-style: none;
+}
+.register{
+    padding-right: 30px;
+}
+.register .registerLinks li a {
+    text-decoration: none;
+    color: black;
+}
+.register .registerLinks li a:hover {
+    color: crimson;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.registerLinks li {
+    list-style: none;
+}
+
+.navigator .navLinks {
+    display: flex;
+    gap: 20px;
+}
+.register .registerLinks {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.regBtn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.regBtn:hover {
+    background-color: darkblue;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+.hardCover{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 70px;
+    border-radius: 15px;
+    box-shadow: 4px 2px 4px #000000a8;
+}
+.hardCover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.covers {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+.rgba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px #00000053;
+    margin: 30px 45px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.rgba:hover {
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+.sphere{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+.blue{
+    background-color: blue;
+}
+.indigo{
+    background-color: lightblue;
+}
+.green {
+    background-color: green;
+}
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .wixNav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navTitle {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .covers {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .rgba {
+    margin: 20px auto;
+  }
+
+  .hardCover {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+  }
+
+  section p {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .navLinks {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .registerLinks {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hardCover {
+    width: 180px;
+    height: 180px;
+  }
+
+  section p {
+    font-size: 1.2rem !important;
+  }
+
+  .regBtn {
+    width: 100%;
+  }
+}
