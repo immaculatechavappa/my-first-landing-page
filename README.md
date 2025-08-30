@@ -58,7 +58,7 @@ document.body.style.background = `linear-gradient(to bottom, white, ${color})`;
 ---
 
 ## 📸 Preview  
-![Preview Screenshot](images/hardcover.jpg)  
+![Preview Screenshot](images/landinPage.png)  
 *(Replace with an actual screenshot of your project if you want.)*  
 
 ---
